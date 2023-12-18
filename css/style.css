@@ -1,0 +1,50 @@
+@import url(variable.css);
+.grid_container{
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 48px 340px 284px;
+    gap: 48px 40px;
+    background-color: var(--Backgroundcolor);
+    /* border: 10px solid red; */
+}
+header{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+aside{
+    background-color: palegreen;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+article{
+    background-color: blueviolet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.images_container{
+    background-color: chocolate;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+.card1{
+    background-color: crimson;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.card2{
+    background-color: chartreuse;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.card3{
+    background-color: darkorange;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.card4{
+    background-color: darkslateblue;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
