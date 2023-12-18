@@ -1,50 +1,119 @@
 @import url(variable.css);
 .grid_container{
+    width: min(100%, 1440px);
+    margin: auto;
+    padding: 32px 20px;
     display: grid;
-    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 48px 340px 284px;
     gap: 48px 40px;
-    background-color: var(--Backgroundcolor);
-    /* border: 10px solid red; */
+    background-color: #1C5550;
+    grid-template-areas: 
+    "HEADER HEADER HEADER HEADER"
+    "ASIDE ARTICLE ARTICLE IMAGE"
+    "CARD1 CARD2 CARD3 CARD4";
 }
 header{
-    background-color: blue;
+    /* background-color: blue; */
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: HEADER;
 }
+.header_link{
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ul{
+    display: flex;
+    column-gap: 84px;
+}
+.header_div{
+    display: flex;
+}
+.search_bar{
+    display: flex;
+    background-color: #1C5550;
+    display: flex;
+    width: 315px;
+    height: 32px;
+    padding: 8px 20px 7px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
+    color: #91B599;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.header_icon{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 aside{
     background-color: palegreen;
     grid-column-start: 1;
     grid-column-end: 2;
-
+    grid-area: ASIDE;
+}
+.aside_list{
 }
 article{
     background-color: blueviolet;
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-area: ARTICLE;
+
 }
-.images_container{
+.img_container{
     background-color: chocolate;
     grid-column-start: 4;
     grid-column-end: 4;
+    grid-area: IMAGE;
+
 }
 .card1{
     background-color: crimson;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-area: CARD1;
+
 }
 .card2{
     background-color: chartreuse;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-area: CARD2;
+
 }
 .card3{
     background-color: darkorange;
     grid-column-start: 3;
     grid-column-end: 4;
+    grid-area: CARD3;
+
 }
 .card4{
     background-color: darkslateblue;
     grid-column-start: 4;
     grid-column-end: 4;
+    grid-area: CARD4;
+
 }
