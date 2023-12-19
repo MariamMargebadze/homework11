@@ -1,10 +1,14 @@
 :root {
-    --heading1fontsize: bold, 24px;
-    --Backgroundcolor: #1C5550;;
+    --heading1: 24px;
+    --paragraph1: 18px;
+    --paragraph2: 16px;
+    --paragraph3: 14px;
+    --Backgroundcolor: #1C5550;
     --firstcolor: #000000;
-    --firstcolor: #1c5550;
-    --firstcolor: #91B599;
-    --firstcolor: #C3B97F;
-    --firstcolor: #DFD9D9;
+    --fontcolor1: #91B599;
+    --logocolor: #C3B97F;
+    --Textcolor: #DFD9D9;
     --mainBorderradius: 4px;
+    --rgbadark: rgba(0, 0, 0, 0.20);
+    --rgbalight: rgba(223, 217, 217, 0.40);
 }
